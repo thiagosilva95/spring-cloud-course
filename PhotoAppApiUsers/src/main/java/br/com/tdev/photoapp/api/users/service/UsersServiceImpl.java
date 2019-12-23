@@ -50,7 +50,7 @@ public class UsersServiceImpl implements UsersService {
 			throw new UsernameNotFoundException(username);
 		}
 		
-		return new User(userEntity.getEmail(), userEntity.getEncryptedPassword(), false, true, true, true, new ArrayList<>());
+		return new User(userEntity.getEmail(), userEntity.getEncryptedPassword(), true, true, true, true, new ArrayList<>());
 	}
 
 	@Override
